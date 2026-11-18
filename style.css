@@ -1,0 +1,198 @@
+body{
+    background:#e7e3dd;
+    font-family:'DM Sans',sans-serif;
+}
+
+/* Sidebar */
+
+.sidebar{
+    background:#f7f3ee;
+    border-right:1px solid #ddd;
+    min-height:100vh;
+}
+
+.logo{
+    font-family:'Fraunces',serif;
+    color:#b44a23;
+}
+
+.nav-link{
+    color:#555;
+    padding:12px;
+    margin-bottom:8px;
+    border-radius:10px;
+}
+
+.active-link{
+    background:white;
+    color:#b44a23 !important;
+    font-weight:bold;
+    box-shadow:0 2px 8px rgba(0,0,0,.08);
+}
+
+/* Weather */
+
+.weather-card{
+    background:#f4d25f;
+    padding:20px;
+    border-radius:18px;
+}
+
+.weather-card h2{
+    font-family:'Fraunces',serif;
+}
+
+.footer-info{
+    color:#666;
+    font-size:.85rem;
+}
+
+/* Main */
+
+main{
+    background:#f7f3ee;
+    min-height:100vh;
+}
+
+/* Header */
+
+.welcome-title{
+    font-family:'Fraunces',serif;
+    font-size:4rem;
+    color:#2d221d;
+}
+
+.welcome-title span{
+    color:#b44a23;
+    font-style:italic;
+}
+
+/* Hero Section */
+
+.hero-wrapper{
+    position:relative;
+    height:430px;
+    margin-bottom:60px;
+}
+
+.receipt-container{
+    position:absolute;
+    left:18%;
+    top:20px;
+    width:330px;
+}
+
+.welcome-container{
+    position:absolute;
+    right:15%;
+    top:0;
+    width:420px;
+}
+
+.receipt-card{
+    border:none;
+    border-radius:20px;
+    transform:rotate(-5deg);
+}
+
+.receipt-date{
+    font-family:'Fraunces',serif;
+    font-size:2.4rem;
+}
+
+.welcome-card{
+    background:#b44a23;
+    color:white;
+    border:none;
+    border-radius:22px;
+    transform:rotate(4deg);
+}
+
+.welcome-card h2{
+    font-family:'Fraunces',serif;
+}
+
+/* Bottom Cards */
+
+.info-card{
+    border-radius:20px;
+    border:1px solid #e5ddd5;
+    min-height:260px;
+    box-shadow:0 4px 12px rgba(0,0,0,.05);
+}
+
+.info-card h4{
+    font-family:'Fraunces',serif;
+}
+
+/* Icons */
+
+.icon-box{
+    width:45px;
+    height:45px;
+    border-radius:12px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-bottom:15px;
+}
+
+.arrival-icon{
+    background:#b44a23;
+    color:white;
+}
+
+.wifi-icon{
+    background:#5867d8;
+    color:white;
+}
+
+.breakfast-icon{
+    background:#c45d8b;
+    color:white;
+}
+
+/* Colors */
+
+.arrival-color{
+    color:#b44a23;
+}
+
+.wifi-color{
+    color:#5867d8;
+}
+
+.breakfast-color{
+    color:#c45d8b;
+}
+
+/* Mobile */
+
+@media(max-width:992px){
+
+    .sidebar{
+        min-height:auto;
+        border-right:none;
+        border-bottom:1px solid #ddd;
+    }
+
+    .hero-wrapper{
+        height:auto;
+    }
+
+    .receipt-container,
+    .welcome-container{
+        position:static;
+        width:100%;
+    }
+
+    .receipt-card,
+    .welcome-card{
+        transform:none;
+        margin-bottom:20px;
+    }
+
+    .welcome-title{
+        font-size:2.2rem;
+    }
+}
